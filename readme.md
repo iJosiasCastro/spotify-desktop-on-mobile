@@ -8,29 +8,32 @@ Follow these simple steps to use the extension:
 
 ### Prerequisites
 
-- You need to have the Kiwi Browser installed on your mobile device. If you don't have it, you can download it from [https://kiwibrowser.com/](https://kiwibrowser.com/).
+- You need to have the Kiwi Browser installed on your mobile device. If you don't have it, you can download it from the [Kiwi Browser Official Website](https://kiwibrowser.com/).
 
 ### Installation
 
-1. **Install the Extension**
+1. **Download and Install the Extension**
 
-   - Download the extension from [INSERT_EXTENSION_LINK].
+   - Download the extension from [this link](https://github.com/iJosiasCastro/spotify-desktop-on-mobile/blob/master/dist/spotify-desktop-on-mobile.zip).
+
    - Open Kiwi Browser on your mobile device.
+
+   - Go to the browser's settings by tapping the three-dot menu in the upper right corner and selecting "Settings."
+
+   - Scroll down and find the "Extensions" section, then enable "Developer mode."
+
+   - Select the "+ (from .zip/.crx/.user.js)" option and choose the extension file you downloaded in the previous step (spotify-desktop-on-mobile.zip).
+
+   - Confirm the installation when prompted.
 
 2. **Changing User Agent to Desktop Browser in Spotify Web Player**
 
-   1. Visit [https://open.spotify.com/](https://open.spotify.com/) in your Kiwi Browser.
+   To switch to the desktop site on the Spotify Web Player, follow these steps:
 
-   2. Open your browser's Developer Tools by tapping the three-dot menu in the upper right corner and selecting "More tools" > "Developer Tools."
+   - Visit [https://open.spotify.com/](https://open.spotify.com/) in your Kiwi Browser.
 
-   3. In the Developer Tools, navigate to the "Network Conditions" tab.
+   - Open the browser's settings by tapping the three-dot menu in the upper right corner and selecting "Settings."
 
-   4. Uncheck "Use browser default" for User Agent settings.
+   - Scroll down and find the "Site settings" section, then tap on "Desktop site."
 
-   5. Select a desktop browser User Agent from the dropdown (e.g., Chrome or Firefox).
-
-   6. Refresh the Spotify Web Player page.
-
-Now, you can enjoy using the Spotify Web Player with a desktop-like experience right on your mobile device. This extension is useful for testing or accessing additional features that may not be available on the mobile version of Spotify.
-
-Feel free to customize and improve this README further to provide more details or information about your extension.
+   - Enable the "Desktop site" option to enable the desktop version of the Spotify Web Player.
