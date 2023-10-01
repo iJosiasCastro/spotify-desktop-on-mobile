@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Spotify desktop on mobile",
+  "version": "1.0",
+  "description": "Enhance Spotify's user interface for desktop experience on mobile devices",
+  "permissions": [ "contextMenus", "storage", "unlimitedStorage", "webRequest", "webRequestBlocking", "tabs", "\u003Call_urls>" ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [ "web-player.js" ]
+}
