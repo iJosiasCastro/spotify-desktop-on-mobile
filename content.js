@@ -1,11 +1,20 @@
-if (window.location.href.startsWith("https://open.spotify.com")){
-  var script = document.createElement("script");
-  fetch(chrome.extension.getURL("web-player.js")).then((res) => {
-    if (res.ok) {
-      res.text().then((txt) => {
-        script.appendChild(document.createTextNode(txt));
+document.addEventListener('DOMContentLoaded', function() {
+  
+    const urlRegex = /^https:\/\/open\.spotifycdn\.com\/cdn\/build\/web-player\/web-player\.[a-f0-9]+\.js$/;
+    const scriptElements = document.querySelectorAll('script');
+    
+    for (const scriptElement of scriptElements) {
+      const src = scriptElement.getAttribute('src');
+      if (src && urlRegex.test(src)) {
+        
+        let src = 'https://spotify-desktop-on-mobile-api--josiascastro200.repl.co/?url=' + scriptElement.src;
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = src;
         (document.head || document.documentElement).appendChild(script);
-      });
+
+
+        break;
+      }
     }
-  });
-}
+});
